@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.39);
+            border-radius: 20px;/*Arredondar bordas*/
+            
+            
+        }
+        article{
+            padding: 5px;
+            background-color: lightgray;
+        }
+        article > aside{
+            background-color: rgb(107, 106, 106);
+        }
+        nav{
+            background-color: rgb(100, 100, 100);
+            padding: 10px;
+            box-shadow: 5px 3px 7px 1px black;
+            margin-bottom: 5px;
+            /*Box-Shadow é sombra, Primeiro Horizontal, vertical , espalhamento e a cor.Dica valiosa é usar o dev tools do google chrome para criar as sombras, pois lá tem as ferramentas que consigo ver melhor e colocar os valores certinhos. Para poder utilizar no devtools, primeiro tenho que adicionar o box-dhadow aqui no visual studio, e depois abrir o dev tool. Abrindo o dev tools, depois de box-shadow, vai ter um quadradinho, e basta clicar nele */
+            
+        }
+        nav > a{
+            text-decoration:none;
+            color:white;
+            font-weight: bold;
+            margin: 30px;
+        }
+        nav:hover{
+            background-color: rgb(53, 52, 52);
+        }
+        footer{
+            color: white;
+            background-color: black;
+            text-align: center;
+            padding: 5px;
+            margin: 0px;
+            
+        }
+        footer > p{
+            margin: 0px;
+        }
+        #bola{
+            height: 100px;
+            width: 100px;
+            background-color: white;
+            margin: 10px;
+            border-radius: 50%;
+
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <header><!--Cabeçalho do site-->
+        <h1>Meu site</h1>
+        <nav><!--Navegação-->
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+
+    <main><!--Código principal-->
+        <section id="assuntos"><!--Seções-->
+
+        </section>
+
+        <section id="noticas">
+            <article><!--Artigos-->
+                
+                <h2>Notícias sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo, animi aperiam amet perspiciatis qui quas cum expedita. Alias reiciendis corrupti accusamus, recusandae reprehenderit sequi consectetur est nulla perferendis quidem qui.</p>
+                <aside>Artigo escrito por José da Silva</aside>
+            </article>
+            <article>
+
+            </article>
+            
+        </section>
+    </main>
+
+    <footer><!--Rodapé-->
+        <P>Desenvolvido por Ricardo Prado</P>
+        
+    </footer>
+
+    <div id="bola"></div>
+
+</body>
+</html>

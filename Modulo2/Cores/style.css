@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    /*height: 100%;*/
+}
+p{
+    text-align: justify;/*Aqui ele vai alinhar o texto*/
+}
+body{
+    /*Aqui é para degradê, pode ser radial circus entre outros*/
+    background-image: linear-gradient(to right,#02735E,#038C3E);
+}
+main{
+    background-color: white;
+    border-radius: 10px;/*Aqui cria uma pequena borda na caixa onde vai ser digitado*/
+    box-shadow: 5px 5px 3px  #0CF25D;/*Aqui cria uma sombra, ela tem 3 parâmetros e uma cor*/
+    width: 600px;/*Altura*/
+    padding: 10px;/*Espaçamento*/
+    margin:auto;/*E aqui vai centralizar, quer dizer que a margem é automâtica, ele vai centralizar como padrão*/
+    
+    
+}
+h1{
+    color:#034159;
+    text-align: center;
+    text-shadow: 1px 1px 2px #010e13;/*Aqui cria uma sombra no texto*/
+
+}
+h2{
+    color:#02735E;
+}

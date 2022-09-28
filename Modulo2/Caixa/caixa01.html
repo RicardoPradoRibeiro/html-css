@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caixas</title>
+    <style>
+        /*
+            Toda caixa tem: 
+            Height--Altura
+            Width--Largura
+            Conteúdo..<h1>Olá,mundo</h1>Olá,mundo é o conteúdo.
+            Border-Border fica colado no conteúdo.
+            Padding-Espaço que posso colocar entre a borda e o conteúdo
+            Margin-Espaço que fica fora da borda.
+            Outline-Traçado que fica na borda.
+
+            Tenho caixas do tipo box-level e caixas do tipo inline-level
+            Box-level: Sempre se inicia em uma linha nova e utiliza a largura inteira da tela, é 100% do meu viewport. Exemplo div,h1,p,main,header,nav,article,aside,footer,form,video.
+            inline-level: Ele continua no lugar da linha que está, ele não ocupa a tela inteira, e depois ele continua na linha ainda. Ele não é isolado igual ao box,level. Exemplo span,a,code,small,strong,em,sup,label,button,input,select 
+        */
+    </style>
+    <style>
+        h1{/*Box level*/
+            background-color: lightslategray;
+            height: 300px;
+            width: 300px;
+            /*Box size*/
+
+            /*Caso eu queria que o h1, que é um box size, seja um inline, é so mudar o display para inline. */
+           
+            /* border-width: 10px;
+            border-style: solid;
+            border-color: darkslategray;
+            Essa maneira é a simplificada dos códigos comentados acima.*/
+            border: 10px solid darkslategray;
+            
+            padding: 10px 10px 10px 10px;/*Em sentido horário. Cima, direita, baixo, esquerda.Caso elas forem todas iguais, eu só preciso indicar uma vez. Aí seria padding: 10px;. Seria o mesmo resultado que o de cima.
+            Quando colocado 2 valores, 10px e 20px apenas, será 10 para cima e baixo, e 20 para direita e esqueda.  */
+            
+            margin: 20px auto 40px auto;/*Se eu quiser para colocar no meio, centralizar, eu utilizo o auto. */
+            
+            /*outline-width: 5px;
+            outline-style: dashed;
+            outline-color: red;*/
+            outline:5px dashed salmon;
+        }
+        a{/*Inline level*/
+
+            border: 10px solid red;
+            padding: 10px 20px;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Parágrados também são exemplos de box-level, mas os <a href="g">links</a> são exemplos de inline-level.</p>
+</body>
+</html>

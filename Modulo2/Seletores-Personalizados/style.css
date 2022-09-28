@@ -1,0 +1,42 @@
+@charset "UT-8";
+/*
+    Em html é ID = em CSS é #
+    Em html é class = em CSS é . 
+*/
+
+body{
+    background-color: #94cf90;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h2{
+    color: #1A8014;
+}
+h1{
+    color:rgb(2, 63, 2)
+}
+h1#principal{/*Esse é um id, onde posso personalisar apenas esse. A regra é que o id é para ser único, para apenas uma vez. */
+    text-align: center;
+    color:white;
+    background-color: #3E803B;
+}
+.basico{/*As classes já são class, que podem ser usadas sempre que chamadas, coloco meus parâmetros aqui dentro, e quando precisar, é só chamar a class*/
+    color:rgb(31, 68, 31)
+
+}
+
+.intermediario{
+    color:rgb(146, 146, 25);
+}
+.avancado{
+    color:rgb(139, 26, 26);
+}
+
+.destaque{
+    
+    background-color: rgba(151, 151, 47, 0.267);
+}
+
+/*O ID SOBREPÕE a CLASS
+Primeiro personalizamos os genéricos, e depois os id, e class. 
+
+*/
